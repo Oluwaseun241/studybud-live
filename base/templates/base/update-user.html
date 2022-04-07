@@ -1,7 +1,7 @@
 {% extends 'main.html' %}
 
 {% block content %}
-    <main class="update-account layout">
+<main class="update-account layout">
         <div class="container">
             <div class="layout__box">
                 <div class="layout__boxHeader">
@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="layout__body">
-                    <form class="form" action="" method="POST">
+                    <form class="form" action="" method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
 
                         {% for field in form %}
@@ -39,5 +39,5 @@
             </div>
         </div>
       </div>
-    </main>
-    {% endblock content %}
+</main>
+{% endblock content %}
